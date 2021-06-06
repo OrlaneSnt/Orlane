@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+     <meta charset='utf-8'>
+     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+     <title>Page Title</title>
+     <meta name='viewport' content='width=device-width, initial-scale=1'>
+     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+     <script src='main.js'></script>
+ </head>
+ <body>
+ 
+ <?php
+
+class Posts {
+    
+    public $_date, $hour, $title, $subtitle, $mainImg, $img2, $chapeau, $intertitre1, $intertitre2, $partie2;
+    public $dateAndHour; //fonction qui lie deux éléments qui vont ensemble, par exemple poids + taille = IMC
+    //Public (on partage les données), Private (on  les garde pour soi)
+
+// function __construct ($d, $hour, $title, $subtitle, $mainImg, $img2, $chapeau, $intertitre1, $intertitre2, $partie2) les noms entre () peuvent être différents de ceux donner à la ligne précédente 
+// {
+//     $this->_date=$d;
+//     $this->_hour=$hour;
+//     $this->dateAndHour = $d + " : " + $hour;
+//     $this->_title=$title;
+//     $this->_subtitle=$subtitle;
+//     $this->_mainImg=$img2;
+//     $this->_img2=$img2;
+//     $this->_chapeau=$chapeau;
+//     $this->_intertitre1=$intertitre1;
+//     $this->_intertitre2=$intertitre2;
+//     $this->_partie2=$partie2;
+
+// }
+function __construct () //on peut remplir la fonction ou la laisser vide et voir ça après
+{
+
+
+}
+function Print ()
+{
+    echo "<h1> ".$this->title."</h1>";
+}
+}
+
+
+$post = new Post(); //obliger de mette cette fonction sinon rien ne fonctionne, c'est pour l'appliquer 
+$post->date = "10/12/2019";
+$post->hour = "13h30";
+$post->title = "Mon site";
+$post->subtitle = "Web";
+$post->mainImg = "";
+$post->img2 = "";
+$post->chapeau = "";
+$post->intertitre1 = "";
+$ppost->intertitre2 = "";
+$post->partie2 = "";
+
+$post->print();
+
+
+
+$post2 = new Post();
+$post2->date = "10/09/2019";
+
+$post2->print(); //pour afficher la fonction post2
